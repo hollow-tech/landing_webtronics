@@ -1,0 +1,35 @@
+.steps {
+  position: relative;
+  padding: 0 15px;
+}
+
+.steps_tree {
+  position: relative;
+  margin: 55px 0 180px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 0;
+}
+.steps_scale {
+  position: absolute;
+  top: 140px;
+  bottom: 140px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  background: linear-gradient(180deg, #1ff2ff 0%, #27f9e5 52.66%, #2fffcd 100%);
+}
+
+@media (max-width: 1150px) {
+  .steps_scale {
+    display: none;
+  }
+
+  .steps_tree {
+    margin: 35px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
